@@ -1,0 +1,237 @@
+body {
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia adentro */
+    padding: 0;
+    /*Fuentes del texto*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+}
+
+/* NAVEGACIÓN*/
+header{
+    /*widht -ancho // height - alto*/
+    width: 100%;
+    height: 60px;
+
+}
+
+header nav {
+    /* justificar a la derecha*/
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header nav .nav-right-section{
+    width: 190px;
+    height: auto;
+    /*Eliminar puntitos*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*centrado verticalmente*/
+    align-items: center;
+
+}
+
+a{
+    /* Eliminar el subrayado del texto*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 18px;
+}
+
+/*Icono del menú*/
+nav .nav-right-section .menu{
+    /*Agregar íconos desde css*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*Que la imagen esté contenida en el elemento más grande*/
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+}
+
+/*Imagen del usuario*/
+nav .nav-right-section img{
+    /*Redondeamos borde*/
+    border-radius: 100%;
+    /*Cambiar tamaño de la imagen*/
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+
+}
+
+main{
+    /*Agregar espacio entre header y main*/
+    margin-top: 200px;
+    text-align: center;
+}
+
+.main-logo{
+    width: 50%;
+    /* Centrar absolutamente gracias a los márgenes automáticos*/
+    /*Vestical // Horizontal*/
+    margin: 0 auto;
+    /*Separacion entre el google y el rectangulo del buscador*/
+    height: 108px;
+    align-content: right;
+
+    
+}
+ 
+.main-logo img{
+    height: 85px;
+
+}
+
+main .main-input {
+    width: 530px;
+    /* Centrar absolutamente gracias a los márgenes automáticos*/
+    /* Vertical // Horizontal*/
+    margin: 0 auto;
+}
+
+main .main-input-container {
+    /* ancho borde || borde-estilo || borde-color*/
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    /*Anchura del buscador*/
+    width: 525px;
+
+}
+
+main .main-input input{
+    height: 32px;
+    /*Quitar el borde*/
+    border: none;
+    /*Quitar el borde cuando está activo el input (cuadro negro en el buscador*/
+    outline: none;
+    width: 450px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3031/3031293.png);
+    background-position: center;
+    background-size: contain;
+    width: 5%;
+    background-repeat: no-repeat;
+    height: 10%;
+    padding-left: 6%;
+    
+
+
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    width: 50%;
+    background-repeat: no-repeat;
+    height: 30%;
+    padding-left: 15%;
+    margin-left: -5%;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg) ;
+   background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10%;
+    margin-left: -9%;
+}
+
+main .Buttons {
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+main .buttons .search{
+    border-radius: 50px;
+    border-color: transparent;
+    border-radius: 10%;
+    margin-right: 15px;
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    color: #333536;
+}
+
+main .buttons .doodles{
+    /*Sombrear las cajas*/
+    box-shadow: 1px 1px 3px 0.3px rgb(232, 230, 230);
+    border-radius: 30%;
+    border: 1px solid #dfe1e5;
+    border-radius: 50%;
+    width: 150%;
+    height: 32%;
+    font-size: 14%;
+    color: #0b0c0e;
+}
+
+/* *************************************************************  */
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: #eeeff0;
+    color:#70757a;
+    font-family:Arial,sans-serif;
+    bottom: 0px;
+    height: auto;
+    font-size: 15px;
+
+}
+
+footer .footerUno{
+    height: 49px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+footer .footerUno p{
+    margin-left: 35px;
+}
+
+footer nav{
+    margin: 0;
+    padding: 0 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer nav .footer-left, .footer-right{
+    margin:0;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    font-family: Arial,sans-serif;
+    background-color: #eeeff0;
+}
+
+footer nav a{
+    /*Cambia color del texto*/
+    color: #70757a;
+    /*Aplicar un margen a la derecha de cada elemento del nav*/
+    margin-right: 25px;
+}
+
+footer nav a:hover{
+    text-decoration: underline;
+}
+
